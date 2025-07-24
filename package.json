@@ -1,0 +1,33 @@
+{
+  "name": "mern-todo-app",
+  "version": "1.0.0",
+  "description": "A full-stack ToDo application built with the MERN stack",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend/todo-frontend && npm run dev",
+    "build": "cd frontend/todo-frontend && npm run build",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend/todo-frontend && npm install",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "keywords": [
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "todo",
+    "fullstack",
+    "jwt",
+    "authentication",
+    "crud"
+  ],
+  "author": "MERN Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
